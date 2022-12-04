@@ -1,0 +1,63 @@
+{% extends 'start.html' %}
+
+{% block content%}
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hypertension prediction! </title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body></br></br></br>
+	<div align="center">
+	<div align="center" class="border">
+	<div class="login">
+		<h2>Hypertension prediction</h2>
+			<p>Please enter your information:</p>
+			
+			<form action="{{url_for('predict')}}" method="post">
+			
+				<br><label>Sex(0,1)</label>
+				<input type="number" name="sex"  placeholder="eg. 0 for female" required="required"/></b>
+				</br></br>
+				<br><label>Age(in year)</label>
+				<input type="number" name="age"  placeholder="eg. 54" required="required"/></b>
+				</br></br>
+				<br><label>Height(cm)</label>
+				<input type="number" name="height"  placeholder="eg. 163" required="required"/></b>
+				</br></br>
+				<br><label>Weight(Kg)</label>
+				<input type="number" name="weight"  placeholder="eg. 60" required="required"/></b>
+				</br></br>
+				<br><label>Systolic Blood Pressure(mmHg)</label>
+				<input type="number" name="systolic" placeholder="eg. 110" required="required"/></b>
+				</br></br>
+				<br><label>Diastolic Blood Pressure(mmHg)</label>
+				<input type="number" name="diastolic" placeholder="eg. 60" required="required"/></br>
+				</br>
+				<br><label>Heart rate(b/m)</label>
+				<input type="number" name="hr"  placeholder="eg. 60"required="required"/></br>
+				</br>
+				<br><label>BMI(kg/m²)</label>
+				<input type="number" name="bmi" placeholder="eg. 15" required="required"/></br>
+				</br>
+				<br><button type="submit" class="btn btn-primary btn-block btn-large"> Predict</button></b>
+				</div>
+		
+					<h1 class="bottom">			
+				</h1>
+				
+				<b>{{prediction_text}}</b>
+		
+				</div>	
+			</form>
+			<br>
+			<br>	
+		
+	</div>
+	</div>
+	</div>
+	
+</body>
+</html>
+{% endblock %}

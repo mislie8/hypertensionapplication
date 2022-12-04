@@ -1,0 +1,89 @@
+
+
+.header{
+    padding: 5px 120px;
+    width: 150px;
+    height: 70px;
+    background-color: #03a75593;
+}
+
+.border{
+    padding: 80px 50px;
+    width: 450px;
+    height: 450px;
+    border: 1px solid #03a75593;
+    border-radius: 0px;
+    background-color: #7c996291;
+}
+
+.btn {
+    padding: 10px 40px;
+    background-color: #03a75593;
+    color: #FFFFFF;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.textbox{
+    padding: 10px 40px;
+    background-color: #03a75593;
+    text-color: #FFFFFF;
+    border-radius: 10px;
+}
+    
+::placeholder {
+    color: #FFFFFF;
+    opacity: 10;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.word{
+    color: #FFFFFF;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.bottom{
+    color: #03030393;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #078b5f;
+    display: flex;
+    overflow-x: auto;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #dee7e3;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: #76837f;
+}
+
+.nav__link--active {
+    color: #687270;
+}

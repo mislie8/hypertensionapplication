@@ -1,0 +1,35 @@
+{% extends 'start.html' %}
+
+{% block content%}
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> about </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">		
+    </head>
+    <body></br></br></br></br></br>
+         <div align="center">
+        <div align="justify" class="border">
+        <div text-color: #0a0a0a;></div>
+            
+        <h3 class="word">
+            <h2 class="word">Hypertension prediction with artificial intelligence and machine learning</h2>
+                        
+            Millions of incidents of high blood pressure led to an enormous quantity of death or disability in the
+            world, the leading cause is not clearly proved. With the help of artificial intelligence /Machine learning,
+            this project will use certain factors age, weight height, gender etc. to predict whether a person is
+            hypertensive and provide suggestions about the prediction results. Machine learning algorithms will be
+            used to predict the outcomes depending on the data provided. Evidence that every single person uses an
+            electronic device will contribute to the benefit of that system. This app will be design as a cross platform
+            which mean it can be run on any operating system like that not only patient hypertensive has their health
+            status monitoring but everyone else including teenager. The result will justify the findings. 
+        </h3>
+    
+			
+	
+			<p class="bottom">To explore this application? <a class="bottom" href="{{url_for('login')}}"> Continue>>></a></p>
+		
+	</body>
+</html>
+{% endblock %}
